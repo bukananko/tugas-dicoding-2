@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet" />
+
+    <script type="module" src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Bookshelf Apps</h1>
+    </header>
+
+    <main>
+      <section>
+        <form id="searchForm" class="search-form">
+          <h2>Cari buku</h2>
+
+          <div class="search-box">
+            <input id="search" type="text" placeholder="tahun/judul/penulis" />
+            <button type="submit" class="search-btn">Cari</button>
+          </div>
+        </form>
+
+        <form id="addForm" class="add-form">
+          <h2>Masukkan buku baru</h2>
+
+          <div class="add-box">
+            <label for="title">Judul</label>
+            <input required id="title" type="text" placeholder="Judul" />
+            <label for="author">Penulis</label>
+            <input required id="author" type="text" placeholder="Penulis" />
+            <label for="year">Tahun</label>
+            <input
+              required
+              id="year"
+              type="number"
+              min="1"
+              placeholder="Tahun" />
+            <label for="isComplete">
+              Selesai dibaca
+              <input type="checkbox" id="isComplete" />
+            </label>
+            <button type="submit" class="add-book-btn">
+              Masukkan buku ke rak
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <div class="uncompleted-book">
+          <h2>Belum selesai dibaca</h2>
+
+          <ul id="uncompletedShelf" class="uncompleted-list"></ul>
+        </div>
+
+        <div class="completed-book">
+          <h2>Selesai dibaca</h2>
+
+          <ul id="completedShelf" class="completed-list"></ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

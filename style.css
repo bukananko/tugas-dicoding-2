@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+p {
+  padding: 0.1rem 0;
+}
+
+.uncompleted-book > h2,
+.completed-book > h2,
+.add-form > h2,
+.search-form > h2 {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hotpink;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 20px;
+}
+
+.search-form {
+  border: 1px solid black;
+  border-radius: 0.375rem;
+  padding: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-box > input {
+  flex: 1;
+}
+
+.search-btn,
+.add-book-btn {
+  background-color: hotpink;
+  color: white;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 0.375rem;
+}
+
+.add-form {
+  border: 1px solid black;
+  padding: 0.9rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.375rem;
+}
+
+.add-box {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-box > input {
+  flex: 1;
+}
+
+.add-box > label:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.add-box > label[for="isComplete"] {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#completed-btn,
+#uncompleted-btn {
+  background-color: green;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 0.375rem;
+}
+
+#delete-btn {
+  background-color: red;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 0.375rem;
+}
+
+.uncompleted-book {
+  margin-bottom: 20px;
+}
+
+.uncompleted-book,
+.completed-book {
+  border: 1px solid black;
+  padding: 0.9rem;
+  border-radius: 0.375rem;
+}
+
+.uncompleted-list > li,
+.completed-list > li {
+  border: 1px solid black;
+  padding: 0.9rem;
+  border-radius: 0.375rem;
+  width: 24rem;
+  margin-top: 10px;
+}
